@@ -11,7 +11,7 @@
   <h2>3 Razones para traer a tu mascota</h2> 
   <ol>
    <li>Garantiza una correcta higiene.</li> 
-   <li>Evita reacciones alérgicas a productos inadecuados.</li>
+   <li>Evita reacciones alergicas a productos inadecuados.</li>
    <li>Es muy relajante para las mascotas.</li>
   </ol>
   <br>
@@ -86,8 +86,44 @@
     <fieldset>
       <legend>Datos del tutor</legend>
 
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Tu nombre"/>
+    
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" id="apellido" placeholder="Tu apellido"/>
+    
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="email" required />
     </fieldset>
+    <fieldset>
+      <legend>Datos de la mascota</legend>
+
+      <label>Tu mascota es:</label>
+        <select>
+          <option>Perro</option>
+          <option>Gato</option>
+        </select>
+
+      <label for="nombre-mascota">Nombre de la mascota</label>
+      <input type="text" name="nombre-mascota" id="nombre-mascota" placeholder="Nombre de tu mascota"/>
+
+      <label for="fecha">Fecha de Nacimiento de tu mascota:</label>
+      <input type="date" id="fecha">
+    </fieldset>
+
+      <fieldset>
+        <legend>Que deseas agregar al servicio?</legend>
+        <input type="checkbox" id="corte" name="service1" value="corte">
+        <label for="corte">Corte de pelo</label> <br>
+        <input type="checkbox" id="deslanado" name="service2" value="deslanado">
+        <label for="deslanado">Deslanado</label> <br>
+        <input type="checkbox" id="oidos" name="service3" value="oidos">
+        <label for="oidos">Limpieza de oidos</label> <br>
+        <input type="checkbox" id="unas" name="service4" value="unas">
+        <label for="unas">Corte de unas</label> <br>
+        </fieldset>
   </form>
+
 
 </body>
 </html>
